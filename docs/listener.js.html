@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>listener.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Alias.html">Alias</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Alias.html#.create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Alias.html#composeMessage">composeMessage</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="AmbientListener.html">AmbientListener</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="AmbientListener.html#.create">create</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Bot.html">Bot</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Bot.html#connect">connect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Bot.html#replyTo">replyTo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Bot.html#use">use</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="CommandListener.html">CommandListener</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="CommandListener.html#.create">create</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="DataManager.html">DataManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DataManager.html#.create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DataManager.html#clearCaches">clearCaches</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DataManager.html#getChannelById">getChannelById</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DataManager.html#getChannels">getChannels</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DataManager.html#getChannelsById">getChannelsById</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DataManager.html#getUserById">getUserById</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DataManager.html#getUsers">getUsers</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DataManager.html#getUsersById">getUsersById</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ImageResponder.html">ImageResponder</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ImageResponder.html#.create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ImageResponder.html#respond">respond</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Listener.html">Listener</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="MessageResponder.html">MessageResponder</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MessageResponder.html#.create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MessageResponder.html#respond">respond</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="RandomImageResponder.html">RandomImageResponder</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="RandomImageResponder.html#.create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="RandomImageResponder.html#respond">respond</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="RandomMessageResponder.html">RandomMessageResponder</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="RandomMessageResponder.html#.create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="RandomMessageResponder.html#respond">respond</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Responder.html">Responder</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Responder.html#respond">respond</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Response.html">Response</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Response.html#.create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Response.html#as">as</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Response.html#to">to</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Response.html#with">with</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-@rowanmanning_knit.html">@rowanmanning/knit</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">listener.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
+
+const bindLogger = require('./util/bind-logger');
+const defaults = require('lodash/defaults');
+const pick = require('lodash/pick');
+const Responder = require('./responder');
+let Bot; // Not set here to get around circular dependency
+
+/**
+ * Class representing a bot listener.
+ */
+class Listener {
+
+	/**
+	 * Create a bot listener.
+	 * @param {Object} options - The listener options.
+	 * @param {String} options.name - The listener name, used in documentation.
+	 * @param {(Array|RegExp|String)} [options.trigger] - The patterns which trigger the listener as
+	 * a string, regular expression, or an array of them. When not defined, all messages will
+	 * trigger the handler.
+	 * @param {(Function|Responder)} options.handler - The handler for the listener.
+	 * @throws {TypeError} Will throw if the name option is not set.
+	 * @throws {TypeError} Will throw if the trigger option is invalid.
+	 * @throws {TypeError} Will throw if the handler option is not set.
+	 */
+	constructor(options) {
+		if (this.constructor === Listener) {
+			throw new Error('You cannot create an instance of Listener, it is designed to be extended');
+		}
+
+		this.options = defaults({}, options, Listener.defaults);
+
+		// Validate the name option
+		this.name = this.options.name;
+		if (!this.name) {
+			throw new TypeError(`${this.constructor.name} name must be set`);
+		}
+
+		// Validate the trigger option
+		this.trigger = this.options.trigger;
+		if (typeof this.trigger !== 'string' &amp;&amp; !(this.trigger instanceof RegExp) &amp;&amp; !Array.isArray(this.trigger)) {
+			throw new TypeError(`${this.constructor.name} trigger must be a string, array, or regular expression`);
+		}
+		this.triggerTypes = null;
+
+		// Validate the handler option
+		this.handler = this.options.handler;
+		if (typeof this.handler !== 'function' &amp;&amp; !(this.handler instanceof Responder)) {
+			throw new TypeError(`${this.constructor.name} handler must be a function or Responder instance`);
+		}
+
+	}
+
+	/**
+	 * Register the listener to a bot.
+	 * @access private
+	 * @param {Bot} bot - The bot to register to.
+	 * @returns {Listener} The calling listener instance.
+	 * @throws {TypeError} Will throw if bot is not an instance of Bot.
+	 */
+	registerToBot(bot) {
+
+		// NOTE: Bot is required here to get around a
+		// circular dependency when the module is loaded
+		Bot = Bot || require('./bot');
+
+		if (!(bot instanceof Bot)) {
+			throw new TypeError('Expected an instance of Bot');
+		}
+
+		this.bot = bot;
+		bot.listeners.push(this);
+
+		if (this.handler instanceof Responder) {
+			this.handler.registerToBot(bot);
+		}
+
+		this.log = bindLogger(bot.log, `${this.constructor.name} (${this.name}):`);
+		this.log.info('Registered to bot');
+
+		bot.botkit.controller.hears(
+			this.trigger,
+			this.triggerTypes,
+			this.handleMessage.bind(this)
+		);
+
+		return this;
+	}
+
+	/**
+	 * Handle a Slack message.
+	 * @access private
+	 * @param {Object} botkitBot - A botkit bot that can be used to respond to the message.
+	 * @param {Object} message - A Slack message to handle.
+	 * @returns {Undefined} No return value.
+	 */
+	handleMessage(botkitBot, message) {
+		if (this.handler instanceof Responder) {
+			this.handler.respond(message);
+		} else {
+			this.handler(message);
+		}
+	}
+
+	/**
+	 * Get the listener as a string, for use in implicit type conversion.
+	 * @access private
+	 * @returns {String} The string representation.
+	 */
+	valueOf() {
+		return `[object ${this.constructor.name}]`;
+	}
+
+	/**
+	 * Get the listener as a plain object, for use in JSON conversion.
+	 * @access private
+	 * @returns {Object} The listener as a plain object.
+	 */
+	toJSON() {
+		return pick(this, [
+			'name'
+		]);
+	}
+
+	/**
+	 * Get console-friendly representation of the listener.
+	 * @access private
+	 * @returns {String} The console-friendly representation.
+	 */
+	inspect() {
+		return `${this.constructor.name} { '${this.name}' }`;
+	}
+
+}
+
+/**
+ * The default options used when constructing a listener.
+ * @static
+ */
+Listener.defaults = {};
+
+module.exports = Listener;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

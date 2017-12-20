@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>data-manager.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Alias.html">Alias</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Alias.html#.create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Alias.html#composeMessage">composeMessage</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="AmbientListener.html">AmbientListener</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="AmbientListener.html#.create">create</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Bot.html">Bot</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Bot.html#connect">connect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Bot.html#replyTo">replyTo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Bot.html#use">use</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="CommandListener.html">CommandListener</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="CommandListener.html#.create">create</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="DataManager.html">DataManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DataManager.html#.create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DataManager.html#clearCaches">clearCaches</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DataManager.html#getChannelById">getChannelById</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DataManager.html#getChannels">getChannels</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DataManager.html#getChannelsById">getChannelsById</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DataManager.html#getUserById">getUserById</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DataManager.html#getUsers">getUsers</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="DataManager.html#getUsersById">getUsersById</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ImageResponder.html">ImageResponder</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ImageResponder.html#.create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ImageResponder.html#respond">respond</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Listener.html">Listener</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="MessageResponder.html">MessageResponder</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MessageResponder.html#.create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MessageResponder.html#respond">respond</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="RandomImageResponder.html">RandomImageResponder</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="RandomImageResponder.html#.create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="RandomImageResponder.html#respond">respond</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="RandomMessageResponder.html">RandomMessageResponder</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="RandomMessageResponder.html#.create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="RandomMessageResponder.html#respond">respond</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Responder.html">Responder</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Responder.html#respond">respond</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Response.html">Response</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Response.html#.create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Response.html#as">as</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Response.html#to">to</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Response.html#with">with</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-@rowanmanning_knit.html">@rowanmanning/knit</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">data-manager.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
+
+const bindLogger = require('./util/bind-logger');
+const defaults = require('lodash/defaults');
+const keyBy = require('lodash/keyBy');
+let Bot; // Not set here to get around circular dependency
+
+/**
+ * Class representing Slack and bot data.
+ */
+class DataManager {
+
+	/**
+	 * Create a data manager.
+	 * @param {Object} options - The data manager options.
+	 */
+	constructor(options) {
+		this.options = defaults({}, options, DataManager.defaults);
+		this.slackApi = null;
+	}
+
+	/**
+	 * Register the data manager to a bot.
+	 * @access private
+	 * @param {Bot} bot - The bot to register to.
+	 * @returns {DataManager} The calling data manager instance.
+	 * @throws {TypeError} Will throw if bot is not an instance of Bot.
+	 */
+	registerToBot(bot) {
+
+		// NOTE: Bot is required here to get around a
+		// circular dependency when the module is loaded
+		Bot = Bot || require('./bot');
+
+		if (!(bot instanceof Bot)) {
+			throw new TypeError('Expected an instance of Bot');
+		}
+
+		this.bot = bot;
+		this.slackApi = bot.botkit.bot.api;
+		bot.data = this;
+
+		this.log = bindLogger(bot.log, `${this.constructor.name}:`);
+		this.log.info('Registered to bot');
+
+		return this;
+	}
+
+	/**
+	 * Get all channels on the Slack instance.
+	 * @returns {Promise} Returns a promise which resolves with an array of channels.
+	 */
+	async getChannels() {
+		if (!this.channelCache) {
+
+			let channels = [];
+			let cursor;
+
+			// Function to fetch a page of channels
+			const fetchChannels = () => {
+				return new Promise((resolve, reject) => {
+					this.slackApi.channels.list({
+						limit: 200,
+						cursor
+					}, (error, response) => {
+						if (error || !response || !response.channels) {
+							return reject(new Error(`Could not get channels from the Slack API: ${error ? error.message : 'no channels'}`));
+						}
+						resolve(response);
+					});
+				});
+			};
+
+			// We need to loop until we get all of the channels,
+			// there's an explit break later to end this
+			/* eslint-disable no-constant-condition */
+			while (true) {
+				/* eslint-enable no-constant-condition */
+
+				const response = await fetchChannels(cursor);
+				channels = channels.concat(response.channels);
+
+				if (response.response_metadata &amp;&amp; response.response_metadata.next_cursor) {
+					cursor = response.response_metadata.next_cursor;
+				} else {
+					break;
+				}
+			}
+
+			// Cache the channels
+			this.channelCache = channels;
+			this.log.info('Loaded and cached Slack channels');
+		}
+
+		// Resolve with the cached channels
+		return this.channelCache;
+	}
+
+	/**
+	 * Get all channels on the the Slack instance as an object with channel IDs as keys.
+	 * @returns {Promise} Returns a promise which resolves with indexed channels.
+	 */
+	async getChannelsById() {
+		if (!this.channelsByIdCache) {
+			this.channelsByIdCache = keyBy(await this.getChannels(), 'id');
+		}
+		return this.channelsByIdCache;
+	}
+
+	/**
+	 * Get a single channel on the Slack instance by ID.
+	 * @param {String} channelId - The ID of the channel to get.
+	 * @returns {Promise} Returns a promise which resolves with requested channel or `null` if one is not found.
+	 */
+	async getChannelById(channelId) {
+		return (await this.getChannelsById())[channelId] || null;
+	}
+
+	/**
+	 * Get all users who have access to the Slack instance.
+	 * @returns {Promise} Returns a promise which resolves with an array of users.
+	 */
+	async getUsers() {
+		if (!this.userCache) {
+
+			let users = [];
+			let cursor;
+
+			// Function to fetch a page of users
+			const fetchUsers = () => {
+				return new Promise((resolve, reject) => {
+					this.slackApi.users.list({
+						limit: 200,
+						cursor
+					}, (error, response) => {
+						if (error || !response || !response.members) {
+							return reject(new Error(`Could not get users from the Slack API: ${error ? error.message : 'no users'}`));
+						}
+						resolve(response);
+					});
+				});
+			};
+
+			// We need to loop until we get all of the users,
+			// there's an explit break later to end this
+			/* eslint-disable no-constant-condition */
+			while (true) {
+				/* eslint-enable no-constant-condition */
+
+				const response = await fetchUsers(cursor);
+				users = users.concat(response.members);
+
+				if (response.response_metadata &amp;&amp; response.response_metadata.next_cursor) {
+					cursor = response.response_metadata.next_cursor;
+				} else {
+					break;
+				}
+			}
+
+			// Cache the users
+			this.userCache = users;
+			this.log.info('Loaded and cached Slack users');
+		}
+
+		// Resolve with the cached users
+		return this.userCache;
+	}
+
+	/**
+	 * Get all users who have access to the Slack instance as an object with user IDs as keys.
+	 * @returns {Promise} Returns a promise which resolves with indexed users.
+	 */
+	async getUsersById() {
+		if (!this.usersByIdCache) {
+			this.usersByIdCache = keyBy(await this.getUsers(), 'id');
+		}
+		return this.usersByIdCache;
+	}
+
+	/**
+	 * Get a single user who has access to the Slack instance by ID.
+	 * @param {String} userId - The ID of the user to get.
+	 * @returns {Promise} Returns a promise which resolves with requested user or `null` if one is not found.
+	 */
+	async getUserById(userId) {
+		return (await this.getUsersById())[userId] || null;
+	}
+
+	/**
+	 * Clear all object caches.
+	 * @returns {Boolean} Returns `true` if the caches were purged.
+	 */
+	clearCaches() {
+		delete this.channelCache;
+		delete this.channelsByIdCache;
+		delete this.userCache;
+		delete this.usersByIdCache;
+		return true;
+	}
+
+	/**
+	 * Get the data manager as a string, for use in implicit type conversion.
+	 * @access private
+	 * @returns {String} The string representation.
+	 */
+	valueOf() {
+		return `[object ${this.constructor.name}]`;
+	}
+
+	/**
+	 * Get the data manager as a plain object, for use in JSON conversion.
+	 * @access private
+	 * @returns {Object} The data manager as a plain object.
+	 */
+	toJSON() {
+		return {};
+	}
+
+	/**
+	 * Get console-friendly representation of the data manager.
+	 * @access private
+	 * @returns {String} The console-friendly representation.
+	 */
+	inspect() {
+		return `${this.constructor.name} {}`;
+	}
+
+	/**
+	 * Create a data manager (see {@link DataManager} for parameters).
+	 * @returns {DataManager} The new data manager.
+	 */
+	static create(...args) {
+		return new this(...args);
+	}
+
+}
+
+/**
+ * The default options used when constructing a data manager.
+ * @static
+ */
+DataManager.defaults = {};
+
+module.exports = DataManager;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

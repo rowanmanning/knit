@@ -1,0 +1,41 @@
+{
+  "name": "@rowanmanning/knit",
+  "version": "0.0.0",
+  "description": "A Slack bot library, built as an abstraction on top of Botkit",
+  "keywords": [
+    "bot",
+    "slack"
+  ],
+  "author": "Rowan Manning (http://rowanmanning.com/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rowanmanning/knit.git"
+  },
+  "homepage": "https://github.com/rowanmanning/knit",
+  "bugs": "https://github.com/rowanmanning/knit/issues",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "botkit": "^0.6.2",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "@rowanmanning/eslint-config": "^1.0.0",
+    "@rowanmanning/make": "^1.0.1",
+    "eslint": "^4.7.2",
+    "jsdoc": "^3.5.5",
+    "minami": "^1.2.3",
+    "mocha": "^3.5.3",
+    "mockery": "^2.1.0",
+    "nyc": "^11.2.1",
+    "proclaim": "^3.4.6",
+    "sinon": "^4.0.0"
+  },
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "make ci",
+    "preversion": "make docs && git add docs"
+  }
+}
