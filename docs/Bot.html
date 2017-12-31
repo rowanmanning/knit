@@ -568,7 +568,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bot.js.html">bot.js</a>, <a href="bot.js.html#line170">line 170</a>
+        <a href="bot.js.html">bot.js</a>, <a href="bot.js.html#line176">line 176</a>
     </li></ul></dd>
     
 
@@ -843,7 +843,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bot.js.html">bot.js</a>, <a href="bot.js.html#line123">line 123</a>
+        <a href="bot.js.html">bot.js</a>, <a href="bot.js.html#line129">line 129</a>
     </li></ul></dd>
     
 
@@ -952,7 +952,7 @@ a new <a href="Response.html">Response</a> object and setting the incoming messa
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bot.js.html">bot.js</a>, <a href="bot.js.html#line115">line 115</a>
+        <a href="bot.js.html">bot.js</a>, <a href="bot.js.html#line121">line 121</a>
     </li></ul></dd>
     
 
@@ -1112,7 +1112,7 @@ a new <a href="Response.html">Response</a> object and setting the incoming messa
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="bot.js.html">bot.js</a>, <a href="bot.js.html#line96">line 96</a>
+        <a href="bot.js.html">bot.js</a>, <a href="bot.js.html#line99">line 99</a>
     </li></ul></dd>
     
 
@@ -1169,6 +1169,9 @@ a new <a href="Response.html">Response</a> object and setting the incoming messa
 |
 
 <span class="param-type"><code><a href="Listener.html">Listener</a></code></span>
+|
+
+<span class="param-type"><code>String</code></span>
 
 
             
@@ -1180,6 +1183,9 @@ a new <a href="Response.html">Response</a> object and setting the incoming messa
 
             <td class="description last">
                 The extension.
+If this is an <a href="Alias.html">Alias</a> or <a href="Listener.html">Listener</a>, it will be registered to the bot.
+If this is a function, it will be called with the bot as a first argument.
+If this is a string, it will be required as a module and run through this method again.
                 
             </td>
         </tr>

@@ -1,6 +1,6 @@
 {
   "name": "@rowanmanning/knit",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A Slack bot library, built as an abstraction on top of Botkit",
   "keywords": [
     "bot",

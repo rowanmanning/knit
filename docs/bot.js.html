@@ -130,11 +130,17 @@ class Bot {
 
 	/**
 	 * Extend the bot's functionality.
-	 * @param {(Alias|Function|Listener)} extension - The extension.
+	 * @param {(Alias|Function|Listener|String)} extension - The extension.
+	 * If this is an {@link Alias} or {@link Listener}, it will be registered to the bot.
+	 * If this is a function, it will be called with the bot as a first argument.
+	 * If this is a string, it will be required as a module and run through this method again.
 	 * @returns {*} The return value of the extension call.
 	 * @throws {TypeError} Will throw if the extension type is invalid.
 	 */
 	use(extension) {
+		if (typeof extension === 'string') {
+			return this.use(require(extension));
+		}
 		if (extension instanceof Alias) {
 			return extension.registerToBot(this);
 		}
