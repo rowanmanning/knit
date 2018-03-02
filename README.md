@@ -122,7 +122,7 @@ Copyright &copy; 2017, Rowan Manning
 
 
 
-[api-docs]: https://rowanmanning.github.io/knit/
+[api-docs]: http://knit.rowanmanning.com/
 [botkit]: https://botkit.ai/
 [mit]: LICENSE
 [node.js]: https://nodejs.org/
