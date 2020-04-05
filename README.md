@@ -3,6 +3,8 @@
 
 Knit is an abstraction on top of [Botkit] which I've pretty much just built for one bot for myself. You're free to use, but it might not get the _best_ level of support and it has only been tested with Slack
 
+**⚠️ NOTE: This project is no longer being maintained. If you're interested in taking over maintenance, please contact me.**
+
 [![NPM version][shield-npm]][info-npm]
 [![Node.js version support][shield-node]][info-node]
 [![Build status][shield-build]][info-build]
